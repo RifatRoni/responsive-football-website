@@ -1,0 +1,755 @@
+/*--------------- fonts Inport ---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*--------------- Common CSS -----------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/*----------------header Menu Css-------------------*/
+.mobilemenu{
+    display: none;
+}
+header{
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.nav-container{
+    background-color: #2D25A0;
+    width:1164px;
+    margin-top: 42px;
+    margin-bottom:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.menu-list{
+    list-style-type: none;
+    padding:0px;
+}
+.menu-list-item{
+    float:left;
+    margin-right:36px;
+}
+.Menu-item-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.Menu-item-link:hover{
+    color: #E02C6D;
+}
+
+.login-wrap-a{
+    display: flex;
+    text-decoration: none;
+    width:123px;
+    background-color: #E02C6D;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+.login-text{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;   
+}
+.login-icon{
+    height:24px;
+    width:24px;
+}
+/*------------header banner css------------*/
+.banner{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 86px;
+}
+.banner-container{
+    width:1165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-info h1{
+    color:white;
+    width: 485px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.live-button{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 30px;
+    background-color: #E02C6D;
+    transition: all linear .5s ;
+    display: inline-block;
+}
+.live-button:hover{
+    color:#E02C6D;
+    background-color:white ;
+    
+}
+.live-button-text{
+    margin-right:8px;
+}
+.banner-container img{
+    width:556px;
+    height:456px;
+    transition: transform 2s ease-in-out;
+}
+.banner-container img:hover{
+    transform:scale(1.2);
+    
+}
+
+/*------------------ Player Section CSS----------------*/
+.player-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom:165px;
+}
+.player-container{
+    width:1050px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    
+}
+.player{
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-info{
+    padding:15px;
+}
+.player-info img{
+    width:300px;
+    height: 256px;
+}
+.player-info h3{
+    font-size: 28px;
+    font-weight: 700px;
+    color: #18191F;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.player-info p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+
+}
+/*------------------ Upcomig Section CSS----------------*/
+.upcoming-matches-section{
+    margin-bottom: 165px;
+}
+.upcoming-matches{
+    width:100%;
+    height:650px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.upcoming-matches-bg{
+    width: 100%;
+    height:650px;
+}
+.matches-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    color:white;
+    width:100%;
+    height:650px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.matches-container h1{
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.match{
+    display: flex;
+    justify-content: space-between;
+    width:700px;
+}
+.team-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-logo img{
+    width:60px;
+    height:auto;
+}
+.team-logo p{
+    align-content: center;
+    text-align: center;
+}
+
+.match h3{
+    text-align: center;
+}
+
+
+/* ------------------- contact section css--------------------*/
+.contact{
+    margin-bottom: 165px;
+}
+.contact h1{
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #0A0826;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    width:1050px;
+}
+input{
+    height:45px;
+    width:490px;
+    border:1px solid #2D25A0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 15px;
+}
+textarea{
+    height: 100px;
+    width:490px;
+    border:1px solid #2D25A0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 15px;
+}
+.send-message{
+    width:168px;
+    background-color: #E02C6D ; 
+    color: white;  
+    height: 44px;
+    transition: all linear .5s ;
+    border:none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.send-message:hover{
+    
+    background-color: #2D25A0;
+    color: white;
+  
+}
+.map {
+    width: 525px;
+    height: 300px;
+}
+
+
+/*------------------ highlights Section CSS----------------*/
+.highlights{
+margin-bottom: 158px;
+}
+.highlights-container{
+    display:flex;
+    justify-content: center;
+}
+.highlights-info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    width:1100px;
+}
+
+.highlights-info-left{
+    width:470px;
+}
+.highlights-info-left h1{
+    font-size: 48px;
+    color: #0A0826;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 8px;
+    
+}
+.highlights-info-left p{
+    color: #6C6C6C;
+    font-size: 16px;
+    margin-bottom: 24px;
+
+    
+}
+.highlight-live-button{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 30px;
+    background-color: #E02C6D;
+    transition: all linear .5s ;
+    display: inline-block;
+}
+.highlight-live-button:hover{
+    color:white;
+    background-color:#2D25A0 ;
+    
+}
+.highlights-info-right img{
+    width: 567px;
+    height: 427px;  
+}
+
+/*------------------ Footer CSS----------------*/
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo{
+    width: 483px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon .fab {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #E7E7E8; 
+    color: #969BAB;
+    border-radius: 18px;
+    margin-right: 14px;
+}
+#last-social-icon{
+    margin-right: 0;
+}
+.social-icon .fab:hover {
+    background-color: #E02C6D;
+    color: #E7E7E8;
+}
+.footer-info p {
+    margin-top:0px;
+    margin-bottom:63px;
+}
+
+
+/*-----------------------------------------
+               media queries
+-----------------------------------------*/
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+/*header css*/
+    header {
+        margin-bottom: 45px;
+    }
+    .nav-container{
+        margin:33px 15px 0 15px;
+
+    }
+    .mobilemenu{
+        display: block;
+        font-size:24px;
+        color:white;
+    }
+    .mobilemenu:hover{
+        color:#E02C6D;
+    }
+    .banner-info h1{
+        color:white;
+        width: 278px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 27px;
+        margin-top: 46px;
+    }
+
+    .menu-list-item{
+        display: none;
+    }
+    .login-wrap-a{
+        display: flex;
+        text-decoration: none;
+        width:90px;
+        background-color: #E02C6D;
+        padding-top: 7px;
+        padding-bottom: 0px;
+        justify-content: center;
+    }
+    .login-text{
+        font-weight: 500;
+        font-size: 12px;
+        color: white;   
+    }
+    .login-icon{
+        height:16px;
+        width:16px;
+    }
+
+    .banner-container img{
+        width:330px;
+        height:260px;
+    }
+    .banner-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .banner-info{
+        margin-bottom:50px;
+    }
+
+    /*player section css */
+    .player-section {
+        margin-bottom: 60px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+    }
+    .player {
+        margin: 0 15px;
+    }
+
+    .player-info img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Upcoming Matches Css*/
+    .upcoming-matches-section {
+        margin-bottom: 60px;
+    }
+    .matches-container h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .match {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 340px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 40px;
+    }
+    .match h3 {
+        font-size: 14px;
+        font-weight: 500px;
+    }
+    .team-logo img {
+        width: 40px;
+    }
+
+
+    /*contact section css*/
+    .contact {
+        margin-bottom: 60px;
+    }
+    .contact h1 {
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 345px;
+    }
+
+    input {
+        height: 45px;
+        width: 320px;
+
+    }
+
+    textarea {
+        width: 320px;
+
+    }
+
+    .map {
+        width: 345px;
+        height: auto;
+    }
+    .contact-right-info{
+        margin-top:30px;
+    }
+
+
+    /*highlights part css */
+    .highlights {
+        margin-bottom: 43px;
+    }
+    .highlights-info {
+        width: 330px;
+        padding-left: 0;
+        flex-direction: column;
+    }
+    .highlights-info-left h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 0;
+    }
+    .highlights-info-right img {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .highlights-info-left {
+        width: 340px;
+    }
+
+
+    /*Footer css*/
+    .footer-logo {
+        width: 271px;
+        height: 63px;
+        margin-bottom: 30px;
+    }
+
+
+
+    }
+
+
+
+/*-----------------------------------------
+               media queries
+-----------------------------------------*/
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+/*header css*/
+
+
+ 
+ header {
+    margin-bottom: 45px;
+}
+.nav-container{
+    margin:33px 15px 0 15px;
+
+}
+.mobilemenu{
+    display: block;
+    font-size:24px;
+    color:white;
+}
+.mobilemenu:hover{
+    color:#E02C6D;
+}
+.banner-info h1{
+    color:white;
+    width: 278px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 27px;
+    margin-top: 46px;
+}
+
+.menu-list-item{
+    display: none;
+}
+.login-wrap-a{
+    display: flex;
+    text-decoration: none;
+    width:90px;
+    background-color: #E02C6D;
+    padding-top: 7px;
+    padding-bottom: 0px;
+    justify-content: center;
+}
+.login-text{
+    font-weight: 500;
+    font-size: 12px;
+    color: white;   
+}
+.login-icon{
+    height:16px;
+    width:16px;
+}
+
+.banner-container img{
+    width:330px;
+    height:260px;
+}
+.banner-container {
+    padding: 0 15px;
+}
+.banner-info{
+    margin-bottom:50px;
+} 
+
+/*player section css */
+
+.player-section {
+    margin-bottom: 60px;
+}
+.players{
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 0;
+}
+.player {
+    margin: 0 15px;
+}
+
+.player-info img {
+    width: 100%;
+    height: auto;
+}
+
+/*  
+/*Upcoming Matches Css*/
+
+
+.upcoming-matches-section {
+    margin-bottom: 60px;
+}
+.matches-container h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+.match h3 {
+    font-size: 14px;
+    font-weight: 500px;
+}
+.team-logo img {
+    width: 40px;
+} 
+
+
+/*contact section css*/
+
+
+.contact {
+    margin-bottom: 60px;
+}
+.contact h1 {
+    margin-bottom: 20px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 730px;
+}
+
+input {
+    height: 45px;
+    width: 720px;
+
+}
+
+textarea {
+    width: 720px;
+
+}
+
+.map {
+    width: 730px;
+    height: auto;
+}
+.contact-right-info{
+    margin-top:30px;
+} 
+
+
+/*highlights part css */
+
+
+.highlights {
+    margin-bottom: 43px;
+}
+.highlights-info {
+    width: 730px;
+    padding-left: 0;
+    flex-direction: column;
+}
+.highlights-info-left h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 0;
+}
+.highlights-info-right img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.highlights-info-left {
+    width: 740px;
+} 
+
+
+/*Footer css*/
+
+.footer-logo {
+    width: 271px;
+    height: 63px;
+    margin-bottom: 30px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+ 
